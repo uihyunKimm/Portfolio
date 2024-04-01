@@ -3,19 +3,32 @@
     padding-top: calc(6.48148vh + 2.08333vw + 15rem);
     min-height: calc(100vh - 180px);
     position: relative;
-    text-align: center;
     width: 100%;
 }
 .title{
-    
+    display: flex;
 }
 .title_inner{
+    display: block;
 
     .title_inner_text{
         font-size: 2.4rem;
         color: #b2b4ff;
+        line-height: 4rem;
+        margin: 2rem 0;
     }
     .title_inner_logo{
-
+        width: 600px;
+        height: 200px;
+        background-color: #878bff;
+        line-height: 2rem;
+    }
+    .title_inner_info{
+        min-width: 600px;
+        max-width: 800px;
+        color: #b8b9ff;
+        font-size: 1.1rem;
+        font-weight: 200;
+        line-height: 2rem;
     }
 }
