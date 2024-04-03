@@ -1,6 +1,8 @@
 .title{
     display: flex;
+    position: relative;
     align-items: center;
+    height: 2800px;
 }
 .title_inner{
     opacity: 1;
@@ -10,6 +12,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    padding-top: 8rem;
     max-width: 1120px;
     width: 90%;
 
@@ -29,16 +32,14 @@
         background-position: center;
     }
     .title_inner_info{
-        display:flex;
-        width: 90%;
-        min-width: 600px;
-        max-width: 800px;
+        display: block;
+        width: 100%;
         color: #b8b9ff;
         font-size: 1.4rem;
         font-weight: 300;
         line-height: 180%;
         margin-bottom: calc(4.62963vh + 9rem);
-        margin-top: 8rem;
+        margin-top: 4rem;
         text-align: center;
     
         span {
@@ -63,11 +64,10 @@
     white-space: nowrap;
     overflow: hidden;
     transition: 0.3s;
-    font-size: 28rem;
+    font-size: 20rem;
     font-weight:bold;
     color: #ffffff0e;
     justify-content: center;
-    margin-top: 10px;
     z-index: 1;
 
     /* &:hover{
