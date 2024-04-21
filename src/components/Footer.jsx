@@ -7,6 +7,8 @@ const Footer = () => {
             <div className={styles.content}>하이
                 <div className={styles.inner_content}>
                     <h3 className={styles.title}>푸터임</h3>
+                    <h3 className={styles.title}>푸터임</h3>
+                    <h3 className={styles.title}>푸터임</h3>
                 </div>
             </div> 
         </footer>
