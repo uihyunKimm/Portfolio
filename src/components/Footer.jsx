@@ -9,6 +9,9 @@ const Footer = () => {
                     <h3 className={styles.title}>푸터임</h3>
                     <h3 className={styles.title}>푸터임</h3>
                     <h3 className={styles.title}>푸터임</h3>
+                    <h3 className={styles.title}>푸터임</h3>
+                    <h3 className={styles.title}>푸터임</h3>
+                    <h3 className={styles.title}>bbq 따라서 만들거임</h3>
                 </div>
             </div> 
         </footer>
