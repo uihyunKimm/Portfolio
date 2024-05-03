@@ -7,19 +7,15 @@ const Footer = () => {
             <div className={styles.content}>하이
                 <div className={styles.inner_content}>
                     <h3 className={styles.title}>푸터임</h3>
-                    <h3 className={styles.title}>푸터임</h3>
-                    <h3 className={styles.title}>푸터임</h3>
-                    <h3 className={styles.title}>푸터임</h3>
-                    <h3 className={styles.title}>푸터임</h3>
                     <h3 className={styles.title}>bbq 따라서 만들거임</h3>
                 </div>
                 <ul className='footer-right'>
                   <li>
-                    <img src={TelIcon} alt="tel" />
+                    <img src="" alt="tel" />
                     TEL : +82 ) 010-XXXX-XXXX
                   </li>
                   <li>
-                    <img src={MailIcon} alt="mail" />
+                    <img src="" alt="mail" />
                     E-Mail : hotbody@gmail.com
                   </li>
                 </ul>
@@ -64,6 +60,6 @@ const Footer = () => {
       </div>
     );
   };
-  
-  export default Footer;
    */
+  export default Footer;
+  
