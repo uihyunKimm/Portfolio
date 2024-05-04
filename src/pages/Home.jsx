@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styles from "./HomeContainer.module.scss"
-import Home from "./Home";
-import Card from "./Card";
+import HomeContent from "../components/HomeContent";
+import Card from "../components/Card";
 
 
 
@@ -9,7 +9,7 @@ import Card from "./Card";
 const HomeContainer = () => {
     return (
         <article className={styles.main}>
-            <Home/>
+            <HomeContent/>
             <Card/>
         </article>
     );

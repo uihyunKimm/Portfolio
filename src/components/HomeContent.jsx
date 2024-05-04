@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import styles from "./Home.module.scss"
+import styles from "./../style/Home.module.scss"
 
 
 
 
-const Home = () => {
+const HomeContent = () => {
     return (
         <div className={styles.title}>
             <div class={styles.flowText}>
@@ -32,4 +32,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default HomeContent;
