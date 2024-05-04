@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import styles from "./HomeContainer.module.scss"
+import styles from "../style/Home.module.scss"
 import HomeContent from "../components/HomeContent";
 import Card from "../components/Card";
+
 
 
 

@@ -13,3 +13,9 @@ body {
     display: block;
     position: relative;
 }
+.main {
+    display: flex;
+    position: relative;
+    padding: 0 1.2rem;
+    min-height: calc(auto - 180px);
+}
