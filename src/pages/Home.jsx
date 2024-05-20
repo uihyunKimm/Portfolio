@@ -5,14 +5,18 @@ import Card from "../components/Card";
 
 
 
-
-
 const HomeContainer = () => {
     return (
-        <article className={styles.main}>
-            <HomeContent/>
-            <Card/>
-        </article>
+        <div className = { styles.layout }>
+            <div className = { styles.main }>
+                <main className={ styles.main2 }>
+                    <article className={styles.main}>
+                        <HomeContent/>
+                        <Card/>
+                    </article>
+                </main>
+            </div>
+        </div>
     );
 };
 

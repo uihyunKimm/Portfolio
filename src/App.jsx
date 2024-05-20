@@ -1,8 +1,9 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./pages/Layout"
 import Home from "./pages/Home"
 import {ToastContainer} from 'react-toastify';
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const App = () => {
   return (
@@ -13,10 +14,8 @@ const App = () => {
         pauseOnHover
         autoClose={2000}
       />
-        <Navbar />
-        <Layout>
+        <Header />
           <Home />
-        </Layout>
         <Footer />
     </>
   );
