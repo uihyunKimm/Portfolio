@@ -20,12 +20,12 @@ body {
     height: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .title{
     display: flex;
     position: relative;
+    justify-content: center;
     align-items: center;
     height: 2800px;
 }
@@ -34,12 +34,11 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
+
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    padding-top: 8rem;
+    padding-top: 32rem;
     max-width: 1120px;
-    width: 90%;
+    width: 100%;
 
     .title_inner_text{
         display: flex;
@@ -103,11 +102,6 @@ body {
             cursor: pointer;
           }
       }
-}
-
-.flowWrap {
-  animation: textLoop 200s linear infinite;
-  padding-right: 1.4881vw;
 }
 
 .layout {
