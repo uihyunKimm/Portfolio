@@ -6,17 +6,17 @@ import Card from "../components/Card";
 
 
 
-const HomeContainer = () => {
+const Home = () => {
     return (
         <div className = { styles.layout }>
-                <main className={ styles.main2 }>
-                    <article className={styles.main }>
-                        <HomeContent/>
-                        <Card/>
-                    </article>
-                </main>
-            </div>
+            <main className={ styles.main2 }>
+                <article className={styles.main }>
+                    <HomeContent/>
+                    <Card/>
+                </article>
+            </main>
+        </div>
     );
 };
 
-export default HomeContainer;
+export default Home;

@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import {ToastContainer} from 'react-toastify';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Profile from "./pages/Profile";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       />
         <Header />
           <Home />
+          <Profile/>
         <Footer />
     </>
   );
