@@ -17,11 +17,11 @@ const Card = () => {
         e.target.style = `transform : rotateX(${rotateX}deg)` */
 }
     return (
-        <div className={styles.main2 }>
+        <section className={ styles.main }>
             <div className={styles.cardcontainer} onMouseMove={(e)=> handleMouseMove(e)}>
                 <div className={styles.card}></div>
             </div>
-        </div>
+        </section>
     );
 };
 

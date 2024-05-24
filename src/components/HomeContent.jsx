@@ -6,8 +6,9 @@ import HomeTextLoop from "./HomeTextLoop"
 
 const HomeContent = () => {
     return (
+        <>
+        <HomeTextLoop />
         <div className={styles.title}>
-            <HomeTextLoop />
             <div className={styles.title_inner}>
                 <strong className={styles.title_inner_text}>군더더기 없는 인터페이스를 좋아하는</strong>
                 <svg className={styles.title_inner_logo} xmlns="http://www.w3.org/2000/svg" width="1312.332" height="214.12" viewBox="0 0 1312.332 214.12">
@@ -24,6 +25,7 @@ const HomeContent = () => {
                 </p>
             </div>
         </div>
+        </>
     );
 };
 
