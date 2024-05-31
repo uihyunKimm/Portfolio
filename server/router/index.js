@@ -1,8 +1,16 @@
 const express = require("express")
 const router = express.Router();
 
-router.get("/",(req,res) => {
-    res.send("Hello")
+const todoList = [
+    {
+    id:1,
+    text:"react",
+    status:false,
+    },
+]
+
+router.get("/api/todo",(req,res) => {
+    res.json(todoList);
 })
 
 module.exports = router;
