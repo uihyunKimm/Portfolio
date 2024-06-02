@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import {ToastContainer} from 'react-toastify';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import "./style/Style.scss"
 
 const App = () => {
   const [todos, setTodos] = useState([])
