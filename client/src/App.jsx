@@ -5,6 +5,7 @@ import {ToastContainer} from 'react-toastify';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./style/Style.scss"
+import Skill from "./components/Skill";
 
 const App = () => {
   const [todos, setTodos] = useState([])
@@ -27,6 +28,7 @@ const App = () => {
       />
         <Header />
           <Home />
+          <Skill />
         <Footer />
     </>
   );
