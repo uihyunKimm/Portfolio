@@ -5,7 +5,8 @@ import {ToastContainer} from 'react-toastify';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./style/Style.scss"
-import Skill from "./components/Skill";
+import Skill from "./pages/Skill";
+import Site from "./pages/Site";
 
 const App = () => {
   const [todos, setTodos] = useState([])
@@ -27,8 +28,11 @@ const App = () => {
         autoClose={2000}
       />
         <Header />
+        <div className="container">
           <Home />
           <Skill />
+          <Site />
+        </div>
         <Footer />
     </>
   );

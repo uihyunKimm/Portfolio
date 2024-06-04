@@ -52,8 +52,8 @@ const Footer = () => {
                 </div>
               </div>
               <div className={styles.footer__right}>
-                  © 2023 webstoryboy<br />
-                  이 사이트는 비트를 이용하여 제작하였습니다.
+                  © 2024 kimuihyun<br />
+                  {/* 이 사이트는 비트를 이용하여 제작하였습니다. */}
               </div>
             </div>
           </div>
