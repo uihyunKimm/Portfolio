@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import styles from "./../style/Header.module.scss"
 import { Link} from "react-router-dom";
 
+/* 
+const [ariaExpanded, setAriaExpanded] = useState('true');
+const headerToggle = document.getElementById("headerToggle");
+const headerNav = document.querySelector(".header__nav");
+
+if (headerToggle) {
+    headerToggle.addEventListener("click", () => {
+    headerNav.classList.toggle("show");
+    headerToggle.getAttribute("aria-expanded") === "true"
+        ? headerToggle.setAttribute("aria-expanded", "false")
+        : headerToggle.setAttribute("aria-expanded", "true");
+    });
+} */
 
 const Header = () => {
     return (
@@ -26,7 +39,6 @@ const Header = () => {
             </nav>
             <div 
               className={styles.header__nav__mobile} 
-              id="headerToggle" 
               aria-controls="primary-menu" 
               aria-expanded="false" 
               role="button" 
