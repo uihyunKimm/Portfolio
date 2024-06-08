@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import "./style/Style.scss"
 import Skill from "./pages/Skill";
 import Site from "./pages/Site";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [todos, setTodos] = useState([])
@@ -32,6 +33,7 @@ const App = () => {
           <Home />
           <Skill />
           <Site />
+          <Contact />
         </div>
         <Footer />
     </>
