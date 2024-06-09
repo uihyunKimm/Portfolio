@@ -22,21 +22,21 @@ const Header = () => {
           <div className={styles.container}>
             <div className={styles.contents}>
                 <Link to="/">로고</Link>
-                <p>dmlxld@gmail.com</p>
+                <a href="mailto:dmlxld@gmail.com" target="_blank">dmlxld@gmail.com</a>
                 <p><span className={styles.navigation}>2024 <strong>Portfolio</strong></span></p>
             </div>
             <div className={styles.contents_low}>
                 <span className={styles.contents_low_low}>화면기획/ 웹디자인 출신 개발자</span>
+              <nav className={styles.header__nav}>
+                <ul>
+                  <li><Link to="#intro">intro</Link></li>
+                  <li><Link to="#skill">skill</Link></li>
+                  <li><Link to="#site">site</Link></li>
+                  <li><Link to="#port">portfolio</Link></li>
+                  <li><Link to="#contact">contact</Link></li>
+                </ul>
+              </nav>
             </div>
-            <nav className={styles.header__nav} role="navigation" aria-label="메인 메뉴">
-              <ul>
-                <li><Link to="#intro">intro</Link></li>
-                <li><Link to="#skill">skill</Link></li>
-                <li><Link to="#site">site</Link></li>
-                <li><Link to="#port">portfolio</Link></li>
-                <li><Link to="#contact">contact</Link></li>
-              </ul>
-            </nav>
             <div 
               className={styles.header__nav__mobile} 
               aria-controls="primary-menu" 

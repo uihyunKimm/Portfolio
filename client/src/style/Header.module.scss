@@ -46,6 +46,17 @@
         font-weight: 100;
         font-size: 1.4rem;
     }
+    a{
+        margin: 0;
+        font-weight: 100;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: var(--white);
+        transition: all 0.3s;
+    }
+    a:hover{
+        color: #b2b4ff;
+    }
     span {
         margin: 0;
         font-weight: 100;
@@ -72,19 +83,24 @@
 .header__nav{
      li {
     display: inline;
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #b2b4ff;
+            font-size: 14px;
+            padding: 14px;
+            position: relative;
+        }
+        a:hover {
+            color:  var(--white);
+        }
     }
-}
-.header__nav li a {
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 14px;
-    position: relative;
 }
 .header__nav li a::before {
     content: '';
     width: calc(100% - 28px);
     height: 1px;
-    background-color: var(--black);
+    background-color: var(--white);
     position: absolute;
     left: 14px;
     bottom: 10px;
