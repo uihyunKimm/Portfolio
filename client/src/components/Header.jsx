@@ -36,15 +36,15 @@ const Header = () => {
                   <li><Link to="#contact">contact</Link></li>
                 </ul>
               </nav>
-            </div>
-            <div 
-              className={styles.header__nav__mobile} 
-              aria-controls="primary-menu" 
-              aria-expanded="false" 
-              role="button" 
-              tabindex="0"
-              >
-              <span></span>
+              <div 
+                className={styles.header__nav__mobile} 
+                aria-controls="primary-menu" 
+                aria-expanded="false" 
+                role="button" 
+                tabindex="0"
+                >
+                <span></span>
+              </div>
             </div>
           </div>
         </header>
