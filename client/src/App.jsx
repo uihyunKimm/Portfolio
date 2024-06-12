@@ -51,6 +51,7 @@ const App = () => {
         <div className="container">
           <Home />
           <Skill />
+          <Skill />
           <Site />
           <Contact />
         </div>
