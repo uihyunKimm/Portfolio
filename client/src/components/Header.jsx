@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import styles from "./../style/Header.module.scss"
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 /* 
 const [ariaExpanded, setAriaExpanded] = useState('true');
@@ -15,10 +15,36 @@ if (headerToggle) {
         : headerToggle.setAttribute("aria-expanded", "true");
     });
 } */
-
+    const headerNav = [
+      {
+          title: "intro",
+          url: "#intro",
+      },
+      {
+          title: "skill",
+          url: "#skill",
+      },
+      {
+          title: "site",
+          url: "#site",
+      },
+      {
+          title: "portfolio",
+          url: "#port",
+      },
+      {
+          title: "contact",
+          url: "#contact",
+      },
+  ];
 const Header = () => {
+  const [show, setShow] = useState(false);
+
+    const toggleMenu = () => {
+        setShow((prevShow) => !prevShow);
+    };
     return (
-        <header className={styles.Header_}>
+      <header id={styles.header} role="banner">
           <div className={styles.container}>
             <div className={styles.contents}>
                 <Link to="/">로고</Link>
@@ -26,22 +52,31 @@ const Header = () => {
                 <p><span className={styles.navigation}>2024 <strong>Portfolio</strong></span></p>
             </div>
             <div className={styles.contents_low}>
-                <span className={styles.contents_low_low}>화면기획/ 웹디자인 출신 개발자</span>
-              <nav className={styles.header__nav}>
-                <ul>
+              <span className={styles.contents_low_low}>화면기획/ 웹디자인 출신 개발자</span>
+              <nav className={styles.header__nav} role="navigation" aria-label="메인 메뉴">
+                    <ul>
+                        {headerNav.map((nav, key) => (
+                            <li key={key}>
+                                <a href={nav.url}>{nav.title}</a>
+                            </li>
+                        ))}
+                    </ul>
+              {/*   <ul>
                   <li><Link to="#intro">intro</Link></li>
                   <li><Link to="#skill">skill</Link></li>
                   <li><Link to="#site">site</Link></li>
                   <li><Link to="#port">portfolio</Link></li>
                   <li><Link to="#contact">contact</Link></li>
-                </ul>
+                </ul> */}
               </nav>
               <div 
-                className={styles.header__nav__mobile} 
+                className={styles.header__nav__mobile}
+                id="headerToggle" 
                 aria-controls="primary-menu" 
-                aria-expanded="false" 
+                aria-expanded={show ? "true" : "false"}
                 role="button" 
                 tabindex="0"
+                onClick={toggleMenu}
                 >
                 <span></span>
               </div>

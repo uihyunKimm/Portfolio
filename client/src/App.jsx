@@ -9,9 +9,8 @@ import Skill from "./pages/Skill";
 import Site from "./pages/Site";
 import Contact from "./components/Contact";
 
-import Lenis from "@studio-freight/lenis";
 
-export function smooth() {
+/* export function smooth() {
     const lenis = new Lenis({ 
         duration: 1,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -27,7 +26,7 @@ export function smooth() {
     lenis.on("scroll", (e) => {
         console.log(e);
     });
-}
+} */
 const App = () => {
   const [todos, setTodos] = useState([])
 
