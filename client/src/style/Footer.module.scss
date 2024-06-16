@@ -48,6 +48,11 @@
             }
             .right {
                 width: 45%;
+
+                @media (max-width: 800px){
+                    width: 100%;
+                }
+                
                 h3 {
                     border-top: 2px solid var(--white2);
                     font-size: 1rem;
@@ -64,15 +69,17 @@
                     border-bottom: 1px solid var(--white3);
                     list-style-type: none;
                 }
-                li:hover {
+                li a:hover {
                     color: var(--white2);
-                    
                 }
-                li span {
+                li a {
                     padding: 0.6rem 0;
                     font-size: 14px;
                     display: inline-block;
                     text-transform: uppercase;
+                    color: var(--white4);
+                    text-decoration: none;
+                    transition: all 0.2s;
                 }
                 li em {
                     color: var(--white3);
