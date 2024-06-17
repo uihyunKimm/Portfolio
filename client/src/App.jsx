@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home"
 import {ToastContainer} from 'react-toastify';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./style/Style.scss"
+import Home from "./pages/Home"
 import Skill from "./pages/Skill";
 import Site from "./pages/Site";
-import Contact from "./components/Contact";
+import Contact from "./pages/Contact";
+import Port from "./pages/Port";
+import Skip from "./pages/Skip";
 
 
 /* export function smooth() {
@@ -46,12 +48,13 @@ const App = () => {
         pauseOnHover
         autoClose={2000}
       />
+        <Skip/>
         <Header />
         <div className="container">
           <Home />
           <Skill />
-          <Skill />
           <Site />
+          <Port />
           <Contact />
         </div>
         <Footer />
