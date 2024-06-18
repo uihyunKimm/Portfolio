@@ -1,6 +1,22 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://websfont.github.io/gmarket/gmarket.css");
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+// setting
+@import "setting/fonts";
+@import "setting/vars";
+@import "setting/reset";
+@import "setting/mixin";
+
+// section
+@import "Header";
+@import "Home";
+@import "Skill";
+@import "Site";
+@import "Port";
+@import "Contact";
+@import "Footer";
 
 :root {
     --mainEng-font: "Montserrat";

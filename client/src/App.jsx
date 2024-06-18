@@ -3,13 +3,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {ToastContainer} from 'react-toastify';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import "./style/Style.scss"
 import Home from "./pages/Home"
 import Skill from "./pages/Skill";
 import Site from "./pages/Site";
 import Contact from "./pages/Contact";
 import Port from "./pages/Port";
 import Skip from "./pages/Skip";
+import "./style/Style.scss"
 
 
 /* export function smooth() {
